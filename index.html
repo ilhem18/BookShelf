@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pic/2.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8fc5187318.js" crossorigin="anonymous"></script>
+    <title>BookShelf</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding"><img src="pic/2.ico" alt="">BookShelf</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="" class="nav-link">BOOKS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">STORES</a></li>
+                <li class="nav-item"><a href="" class="nav-link">RECOMMANDATIONS</a></li>
+                <a href="login.html" class="conbtn">Connexion</a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="leading">
+        
+        <div class="right">
+            <h1>Find the book you're looking for</h1>
+            <div class="search_wrap search_wrap_6">
+                <div class="search_box">
+                    <input type="text" class="input" placeholder="search...">
+                    <div class="btn">
+                        <p>Search</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+           <img src="pic/book2-removebg-preview.png" alt="">
+        </div>
+    </section>
+    <section id="recommendation"></section>
+
+
+
+
+
+
+
+    <script>
+         const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+</body>
+</html>
