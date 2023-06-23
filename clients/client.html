@@ -1,0 +1,287 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pic/2.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8fc5187318.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">BookShelf</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="" class="nav-link">BOOKS</a></li>
+                <li class="nav-item"><a href="" class="nav-link">STORES</a></li>
+                <li class="nav-item"><a href="" class="nav-link">RECOMMENDATIONS</a></li>
+                <a href="login.html" class="conbtn">Connexion</a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section id="clientprofile">
+        <div class="formular">
+            <button id="openModal">Let us know you better!</button>
+        </div>
+    </section>
+
+    
+
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section id="formulaire">
+                <form action="">
+                    <div class="form-group">
+                        <label>What genres do you enjoy reading?</label>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="fiction">
+                            <label>Fiction</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="mystery&thriller">
+                            <label>Mystery/Thriller</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="sciencefiction">
+                            <label>Science Fiction</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="fantasy">
+                            <label>Fantasy</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="romance">
+                            <label>Romance</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="historicalfiction">
+                            <label>Historical Fiction</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="business">
+                            <label>Business/Entrepreneurship</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="bio">
+                            <label>Biography/Autobiography</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="selfhelp">
+                            <label>Self-help/Personal Development</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="science">
+                            <label>Science/Popular Science</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="history">
+                            <label>History</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="travel">
+                            <label>Travel</label>
+                        </div>
+                        <div class="form-check">
+                            <label >Other (please specify):</label>
+                            <br>
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>What type of reading experience are you looking for?</label>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="fastpaced">
+                            <label>Engaging and fast-paced</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="thoughtprovoking">
+                            <label>Thought-provoking and introspective</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="humorous">
+                            <label>Light-hearted and humorous</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="emotional">
+                            <label>Emotional and heartwarming</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="educational">
+                            <label>Informative and educational</label>
+                        </div>
+                        <div class="form-check">
+                            <label>Other (please specify):</label>
+                            <br>
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>What is your preferred book length?</label>
+                          <div class="form-check">
+                            <input type="radio" id="short" value="">
+                            <label>
+                              Short (less than 200 pages)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" id="medium" value="" >
+                            <label>
+                              Medium (200-400 pages)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" id="long" value="">
+                            <label>
+                              Long (over 400 pages)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" id="null" value="">
+                            <label>
+                              No preference
+                            </label>
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Would you like to explore diverse prespectives and voices in the books recommended to you?</label>
+                          <div class="form-check">
+                            <input type="radio" id="yes" value="">
+                            <label>
+                                Yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" id="no" value="" >
+                            <label>
+                              No
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" id="null" value="" >
+                            <label>
+                              No preference
+                            </label>
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label>How important are plot twists and surprises in the books you read?</label>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="veryimportant">
+                            <label>Very important</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="important">
+                            <label>Somewhat important</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" value="" id="notimportant">
+                            <label>Not important</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Are you open to reading books that challenge your beliefs or introduce new prespectives?</label>
+                        <div class="form-check">
+                            <input type="radio" value="" id="yes">
+                            <label>Yes, I enjoy thought-provoking reads</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" value="" id="no">
+                            <label>No, I prefer books that align with my existing beliefs</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" value="" id="maybe">
+                            <label>I'm open to some degree of challenging ideas</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Are there any specific authors you like or books you've enjoyed in the past?</label>
+                        <br>
+                        <input type="text" class="form-control" placeholder="Please provide details">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Do you have any preferred settings or time periods for the books you read? (e.g., contemporaty, historical, futuristic, specific countries/regions)</label>
+                        <br>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Are there any specific thermes or topics you'd like to explore in the books recommended to you? (e.g., love and relationship, coming-of-age, technology, social issues)</label>
+                        <br>
+                        <input class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Is there anything else you'd like to mention about your reading preferences or any specific requests for books recommendations?</label>
+                        <br>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-submit">
+                        <button>Send</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </div>
+    
+
+<footer id="footer">
+    <div class="footer-content">
+        <div class="side one">
+            <a href="index.html" class="logo">Book <br> Shelf</a>
+            <p>Expand your mind reading a book.</p>
+        </div>
+        <ul class="side propos">
+            <li><a href="">books</a></li>
+            <li><a href="">BookStores</a></li>
+            <li><a href="">recommendations</a></li>
+            <li><a href="">Termes</a></li>
+        </ul>
+        <div class="side contact">
+            <p>Contact us whith your issue and we will get back to you at once</p>
+            <form action="" class="form">
+                <div class="email">
+                    <div class="text">Email *</div>
+                    <input type="email" required>
+                </div>
+                <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea cols="25" rows="5" required></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 BookShelf. Developped by <span>DERDOUR ILHAM DEHIBA</span></p>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    document.getElementById("openModal").addEventListener("click", function(){
+        document.getElementById("myModal").style.display="block";
+    });
+    document.getElementsByClassName("close")[0].addEventListener("click", function(){
+        document.getElementById("myModal").style.display="none";
+    });
+    window.addEventListener("click", function(event){
+        if(event.target == document.getElementById("myModal")){
+            document.getElementById("myModal").style.display = "none";
+        }
+    });
+</script>
+</body>
+</html>
